@@ -1,0 +1,76 @@
+body, html, h1, h2, h3, h4, h5, h6, p, table, dl, dt, dd, ol, ul, pre, code {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+input, textarea, select {
+	font-family: "Noto Sans JP", sans-serif;
+	outline: none;
+}
+
+input[type="text"], input[type="textarea"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+
+	&::-webkit-search-decoration, &::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+	}
+}
+
+input[type="submit"], input[type="button"] {
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	border-radius: 0;
+	-webkit-box-sizing: content-box;
+	box-sizing: border-box;
+
+	&:-webkit-search-decoration {
+		display: none;
+	}
+
+	&:focus {
+		outline-offset: -2px;
+	}
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

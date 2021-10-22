@@ -1,0 +1,101 @@
+@mixin for-device($size) {
+	@if $size == "tablet" {
+		@media (min-width: $for-phone +1) and (max-width: $for-tablet-landscape-up) {
+			@content;
+		}
+	}
+
+	@else if $size == "tablet-portrait" {
+		@media (max-width: $for-tablet-portrait-up) {
+			@content;
+		}
+	}
+
+	@else if $size == "phone" {
+		@media (max-width: $for-phone) {
+			@content;
+		}
+	}
+}
+
+@mixin font-size($size, $base: 16) {
+	font-size: $size + px;
+	font-size: ($size / $base) + rem;
+}
+
+@mixin display-flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin flex-wrap($value: nowrap) {
+	-webkit-flex-wrap: $value;
+	flex-wrap: $value;
+
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	}
+
+	@else {
+		-ms-flex-wrap: $value;
+	}
+}
+
+@mixin justify-content($value: flex-start) {
+	@if $value == flex-start {
+		-webkit-box-pack: start;
+		-moz-box-pack: start;
+		-ms-flex-pack: start;
+	}
+
+	@else if $value == flex-end {
+		-webkit-box-pack: end;
+		-moz-box-pack: end;
+		-ms-flex-pack: end;
+	}
+
+	@else if $value == space-between {
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-ms-flex-pack: justify;
+	}
+
+	@else if $value == space-around {
+		-ms-flex-pack: distribute;
+	}
+
+	@else {
+		-webkit-box-pack: $value;
+		-moz-box-pack: $value;
+		-ms-flex-pack: $value;
+	}
+
+	-webkit-justify-content: $value;
+	justify-content: $value;
+}
+
+@mixin align-items($value: stretch) {
+	@if $value == flex-start {
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-ms-flex-align: start;
+	}
+
+	@else if $value == flex-end {
+		-webkit-box-align: end;
+		-moz-box-align: end;
+		-ms-flex-align: end;
+	}
+
+	@else {
+		-webkit-box-align: $value;
+		-moz-box-align: $value;
+		-ms-flex-align: $value;
+	}
+
+	-webkit-align-items: $value;
+	align-items: $value;
+}

@@ -1,0 +1,298 @@
+.main {
+	&.top {
+		padding-top: 80px;
+		
+		.mainvisual {
+			background: #fff;
+			padding: 0 5%;
+
+			&_inner {
+				@include display-flex();
+				@include justify-content(space-between);
+
+				.mainvisualConcept {
+					padding: 60px 0;
+
+					&_title {
+						@include font-size(50);
+
+						letter-spacing: 4px;
+					}
+
+					&_lead {
+						@include font-size(40);
+
+						margin-top: 10px;
+					}
+
+					&_text {
+						@include font-size(40);
+
+						line-height: 1.5;
+						margin-top: 60px;
+					}
+				}
+			}
+		}
+
+		.about {
+			.section-title {
+				text-align: center;
+			}
+
+			.section-text {
+				@include font-size(22);
+
+				font-weight: bold;
+				margin-top: 40px;
+			}
+		}
+
+		.recommend {
+			.recommendList {
+				margin: 0 auto;
+				max-width: 720px;
+				width: 100%;
+
+				li {
+					@include font-size(26);
+
+					font-weight: bold;
+					margin-top: 40px;
+					padding-left: 40px;
+					position: relative;
+
+					&:nth-child(n+2) {
+						margin-top: 20px;
+					}
+
+					&::before{
+					    background-color: #fff;
+				   		border: 1px solid #323232; 
+					    box-sizing: border-box;
+					    content: "";
+					    display: block;
+					    height: 20px;
+					    left: 0;
+					    margin-top: -10px;
+					    position: absolute;
+					    top: 50%;
+					    width: 20px;
+					}
+
+					&::after{
+					    border-bottom: 5px solid #585753;
+					    border-left: 5px solid #585753;
+					    box-sizing: border-box;
+					    content: "";
+					    display: block;
+					    height: 14px;
+					    left: 3px;
+					    margin-top: -14px;
+					    position: absolute;
+					    top: 50%;
+					    transform: rotate(-45deg);
+					    width: 26px;
+					}
+				}
+			}
+
+			&_heading {
+				@include font-size(38);
+
+				color: $color-blue;
+				font-weight: bold;
+				margin: 40px auto 0;
+				max-width: 720px;
+				width: 100%;
+			}
+		}
+
+		.price {
+			.section-lead {
+				margin-top: 20px;
+			}
+
+			.priceBox {
+				@include align-items(center);
+				@include display-flex();
+				@include justify-content(space-between);
+
+				margin: 40px auto 0;
+				max-width: 800px;
+				width: 100%;
+
+				.priceBoxConcept {		
+					color: $color-blue;
+					font-weight: bold;
+					text-align: center;
+
+					&_text {
+						@include font-size(22);
+					}
+
+					&_price {
+						@include font-size(42);
+
+						margin-top: 10px;
+					}
+				}
+
+				.priceBoxMenu {
+					width: 80%;
+
+					.priceBoxMenuTable {
+						width: 100%;
+
+						thead {
+							th {
+								width: 40%;
+							}
+
+							td {
+								@include font-size(16);
+
+								background: #646464;
+								color: #fff;
+								padding: 10px 0;
+								text-align: center;
+							}
+						}
+
+						tbody {
+							@include font-size(16);
+
+							th {
+								border: 1px solid #323232;
+								font-weight: normal;
+								padding: 10px 0;
+								width: 40%;
+							}
+
+							td {
+								border: 1px solid #323232;
+								font-weight: bold;
+								text-align: center;
+								width: 30%;
+							}
+
+							tr {
+								&:nth-child(n+2) {
+									td {
+										@include font-size(20);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.speed {
+			.section-lead {
+				margin-top: 20px;		
+			}
+
+			.speedBox {
+				@include align-items(center);
+				@include display-flex();
+				@include justify-content(space-between);
+
+				margin: 40px auto 0;
+				max-width: 800px;
+				width: 100%;
+
+				.speedBoxConcept {
+					color: $color-blue;
+					font-weight: bold;
+					text-align: center;
+
+					&_title {
+						@include font-size(38);
+
+						span {
+							margin-right: 10px;
+						}
+					}
+
+					&_lead {
+						@include font-size(32);
+
+						line-height: 1.3;
+						margin-top: 20px;
+					}
+				}				
+			}
+		}
+
+		.quality {
+			.section-lead {
+				margin-top: 20px;		
+			}
+		}
+
+		.selfservice {
+			.section-lead {
+				margin-top: 20px;				
+			}
+
+			.selfserviceList {
+				@include align-items(center);
+				@include display-flex();
+				@include flex-wrap(wrap);
+				@include justify-content(space-around);
+
+				margin-top: 20px;
+
+				li {
+					margin-top: 20px;
+					width: 30%;
+
+					.selfserviceListBox {
+						dd {
+							@include align-items(center);
+							@include display-flex();
+							@include font-size(20);
+							@include justify-content(center);
+
+							font-weight: bold;
+
+							span {
+								@include font-size(32);
+
+								margin-right: 10px;
+							}
+						}
+
+						&_text {
+							@include font-size(24);
+
+							color: $color-blue;
+							font-weight: bold;
+							line-height: 1.3;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+
+		.map {
+			.mapArea {
+				height: 0;
+				overflow: hidden;
+				padding-top: 35%;
+				position: relative;
+
+				iframe {
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;					
+				}			
+			}
+		}
+	}
+}
