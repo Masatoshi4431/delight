@@ -10,13 +10,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 	
 	<header class="header js-headerFixed">
 		<div class="header_inner">
 			<div class="header_logo">
-				<img src="#" alt="Delight">
+				<img src="assets/images/logo.png" alt="Delight">
 			</div>
 			<div class="headerNav">
 				<ul class="headerNavList">
@@ -36,19 +37,21 @@
 			<div class="mainvisual_inner">
 				<div class="mainvisualConcept">
 					<div class="mainvisualConcept_logo">
-						<img src="#" alt="Delight">
+						<img src="assets/images/mainvisual_logo.png" alt="Delight">
 					</div>
 					<h1 class="mainvisualConcept_title">本物ヘアカット専門店</h1>
 					<h2 class="mainvisualConcept_lead">2021.11.01 OPEN!</h2>
 					<h3 class="mainvisualConcept_text">カット以外をセルフ化し、<br>低価格・高品質・ハイスピード<br>の限界へ挑戦します！</h3>
 				</div>
 				<div class="mainvisualThumbnail">
-					<img src="#" alt="">
+					<div class="mainvisualThumbnail_img">
+						<img src="assets/images/mainvisual_img.png" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="section about bg-number number_one js-headerTarget" id="about">
+		<section class="about bg-stripe js-headerTarget" id="about">
 			<div class="container">
 				<h2 class="section-title">ABOUT</h2>
 				<p class="section-text">Delight(ディライト)はヘアカットに特化したメンズヘアカット専門店です。<br>ご来店サイクルが短いほどお得な価格設定は、オシャレを楽しみたいみなさんのライフスタイルを応援！カウンセリングとカット以外はセルフサービスにすることにより、高品質･低価格･ハイスピードのお客様満足を追求します！</p>
@@ -130,7 +133,7 @@
 						<p class="speedBoxConcept_lead">スケジュールの<br>合間の整髪が可能！</p>
 					</div>
 					<div class="speedBox_img">
-						<img src="#" alt="">
+						<img src="assets/images/speed_img.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -147,7 +150,7 @@
 						<p class="dontwaitBoxConcept_title">時間の無駄を<br>極限まで削減！</p>
 					</div>
 					<div class="dontwaitBox_img">
-						<img src="#" alt="">
+						<img src="assets/images/dontwait_img.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -165,7 +168,7 @@
 						<p class="qualityBoxConcept_lead">お気に召さなかった場合施術後の切り直しが可能！</p>
 					</div>
 					<div class="qualityBox_img">
-						<img src="#" alt="">
+						<img src="assets/images/quality_img.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -180,31 +183,31 @@
 				<ul class="selfserviceList">
 					<li>
 						<dl class="selfserviceListBox">
-							<dt><img src="#" alt=""></dt>
+							<dt><img src="assets/images/service_step1.jpg" alt=""></dt>
 							<dd><span>01</span>ヘアドライ</dd>
 						</dl>
 					</li>
 					<li>
 						<dl class="selfserviceListBox">
-							<dt><img src="#" alt=""></dt>
+							<dt><img src="assets/images/service_step2.jpg" alt=""></dt>
 							<dd><span>02</span>バキューム</dd>
 						</dl>
 					</li>
 					<li>
 						<dl class="selfserviceListBox">
-							<dt><img src="#" alt=""></dt>
+							<dt><img src="assets/images/service_step3.jpg" alt=""></dt>
 							<dd><span>03</span>スタイリング</dd>
 						</dl>
 					</li>
 					<li>
 						<dl class="selfserviceListBox">
-							<dt><img src="#" alt=""></dt>
+							<dt><img src="assets/images/service_step4.jpg" alt=""></dt>
 							<dd><span>04</span>清掃</dd>
 						</dl>
 					</li>
 					<li>
 						<dl class="selfserviceListBox">
-							<dt><img src="#" alt=""></dt>
+							<dt><img src="assets/images/service_step5.jpg" alt=""></dt>
 							<dd><span>05</span>除菌</dd>
 						</dl>
 					</li>
@@ -226,7 +229,7 @@
 	<footer class="footer">
 		<div class="footer_inner">
 			<div class="footer_logo">
-				<img src="#" alt="Delight">
+				<img src="assets/images/footer_logo.png" alt="Delight">
 			</div>
 			<div class="footerAccess">
 				<p class="footerAccess_title">ADDRESS</p>
