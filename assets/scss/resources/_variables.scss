@@ -1,0 +1,39 @@
+/*=============================================================
+
+	font-family
+
+============================================================= */
+$font-family              : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$font-family-blankopsone  : 'Black Ops One', cursive;
+
+
+/*=============================================================
+
+	color
+
+============================================================= */
+$color-blue       : #4984B5;
+$color-dark-blue  : #1579CE;
+$color-brown      : #67543B;
+$color-dark-brown : #4D4131;
+$color-light-gray : #F4F0EC;
+
+
+/*=============================================================
+
+	line-height
+
+============================================================= */
+$line-height-head : 1.3;
+$line-height-body : 1.6;
+$line-height-base : 2;
+
+
+/*=============================================================
+
+	break point
+
+============================================================= */
+$for-tablet-landscape-up	: 1180px;
+$for-tablet-portrait-up		: 768px;
+$for-phone                  : $for-tablet-portrait-up - 1px;
