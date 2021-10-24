@@ -4,7 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Delight(ディライト) 本物ヘアカット専門店</title>
-	
+	<meta content="" name="description">
+	<meta property="og:title" content="Delight(ディライト) 本物ヘアカット専門店">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="Delight(ディライト) 本物ヘアカット専門店">
+	<meta property="og:locale" content="ja_JP">
+
 	<link rel="stylesheet" href="assets/css/style.css?<?php echo time(); ?>">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
