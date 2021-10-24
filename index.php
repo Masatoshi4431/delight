@@ -4,13 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Delight(ディライト) 本物ヘアカット専門店</title>
-	
-	<link rel="stylesheet" href="assets/css/style.css??<?php echo time(); ?>">
+	<meta content="" name="description">
+	<meta property="og:title" content="Delight(ディライト) 本物ヘアカット専門店">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="Delight(ディライト) 本物ヘアカット専門店">
+	<meta property="og:locale" content="ja_JP">
+
+	<link rel="stylesheet" href="assets/css/style.css?<?php echo time(); ?>">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 	
@@ -28,8 +38,23 @@
 					<li><a href="#access">ACCESS</a></li>
 				</ul>
 			</div>
+			<div class="spHeaderNav js-headerToggle js-spHeaderToggle">
+				<span></span><span></span><span></span>
+			</div>
 		</div>
 	</header>
+
+	<div class="spHeaderMenu js-headerToggleMenu js-spHeaderFixed">
+		<div class="spHeaderMenuList">
+			<ul>
+				<li><a href="#about" class="js-spHeaderMenuList">ABOUT</a></li>
+				<li><a href="#price" class="js-spHeaderMenuList">PRICE</a></li>
+				<li><a href="#speed" class="js-spHeaderMenuList">SPEED</a></li>
+				<li><a href="#service" class="js-spHeaderMenuList">SELF SERVICE</a></li>
+				<li><a href="#access" class="js-spHeaderMenuList">ACCESS</a></li>
+			</ul>
+		</div>
+	</div>	
 
 	<main class="main top">
 
@@ -58,7 +83,7 @@
 			</div>
 		</section>
 
-		<section class="section recommend bg-number number_two">
+		<section class="section recommend bg-number number-one">
 			<div class="container">
 				<div class="sectionHead">
 					<h2 class="section-title">RECOMMEND</h2>
@@ -72,11 +97,11 @@
 			</div>
 		</section>
 
-		<section class="section price" id="price">
+		<section class="section price bg-number number-two" id="price">
 			<div class="container">
 				<div class="sectionHead">
 					<h2 class="section-title">PRICE</h2>
-					<h3 class="section-lead">ご来店サイクルが短い程、お財布に優しい！<br>こまめに髪型を整えたいを叶える！</h3>
+					<h3 class="section-lead">ご来店サイクルが短い程、<br class="is-sp">お財布に優しい！<br>こまめに髪型を整えたいを叶える！</h3>
 				</div>
 				<div class="priceBox">
 					<div class="priceBoxConcept">
@@ -94,8 +119,8 @@
 							<tbody>
 								<tr>
 									<th>来店サイクル</th>
-									<td>有</td>
-									<td>無</td>
+									<td><span>有</span></td>
+									<td><sapn>無</sapn></td>
 								</tr>
 								<tr>
 									<th>15日以内</th>
@@ -121,11 +146,11 @@
 			</div>
 		</section>
 
-		<section class="section speed" id="speed">
+		<section class="section speed bg-number number-three" id="speed">
 			<div class="container">
 				<div class="sectionHead">
 					<h2 class="section-title">SPEED</h2>
-					<h3 class="section-lead">カット特化で品質重視の高速カットを実現！</h3>
+					<h3 class="section-lead">カット特化で<br class="is-sp">品質重視の高速カットを実現！</h3>
 				</div>
 				<div class="speedBox">
 					<div class="speedBoxConcept">
@@ -139,11 +164,11 @@
 			</div>
 		</section>
 
-		<section class="section dontwait">
+		<section class="section dontwait bg-number number-four">
 			<div class="container">
 				<div class="sectionHead">
 					<h2 class="section-title">DON'T WAIT</h2>
-					<h3 class="section-lead">カット以外はセルフだから待たせません！</h3>
+					<h3 class="section-lead">カット以外は<br class="is-sp">セルフだから待たせません！</h3>
 				</div>
 				<div class="dontwaitBox">
 					<div class="dontwaitBoxConcept">
@@ -156,11 +181,11 @@
 			</div>
 		</section>
 
-		<section class="section quality">
+		<section class="section quality bg-number number-five">
 			<div class="container">
 				<div class="sectionHead">
 					<h2 class="section-title">QUALITY ASSURANCE</h2>
-					<h3 class="section-lead">お客様満足を第一に考えたサービスです！</h3>
+					<h3 class="section-lead">お客様満足を<br class="is-sp">第一に考えたサービスです！</h3>
 				</div>
 				<div class="qualityBox">
 					<div class="qualityBoxConcept">
@@ -242,6 +267,6 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/script.js?<?php echo time(); ?>"></script>
 </body>
 </html>

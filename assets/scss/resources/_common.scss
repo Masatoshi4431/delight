@@ -15,65 +15,42 @@ body {
 	}
 }
 
+.is-pc {
+	display: block;
+
+	@include for-device(phone) {
+		display: none;
+	}
+}
+
+.is-sp {
+	display: none;
+
+	@include for-device(phone) {
+		display: block;
+	}
+}
+
 .section {
-	padding: 100px 0;
+	padding: 200px 0 100px;
 	position: relative;
 
 	@include for-device(phone) {
-		padding: 50px 0;
-	}
-
-	&.bg-number {
-		&::before {
-			display: none;
-
-			@include font-size(500);
-
-			color: #f0f0f0;
-			font-weight: bold;
-			left: 0;
-			margin: auto;
-			right: 0;
-			position: absolute;
-			text-align: center;
-			top: -10%;
-			width: 100%;
-			z-index: -100;
-		}
-
-		&.number {
-			&_one {
-				&::before {
-					content: "01";
-				}
-			}
-
-			&_two {
-				&::before {
-					content: "02";
-				}
-			}
-
-			&_three {
-				&::before {
-					content: "03";
-				}
-			}
-		}
+		padding: 100px 0 50px;
 	}
 }
 
 .sectionHead {
 	margin: 0 auto;
-	max-width: 700px;
+	max-width: 850px;
 	width: 100%;
 }
 
 .section-title {
-	@include font-size(44);
+	@include font-size(50);
 
 	font-family: 'Black Ops One', cursive;
-	line-height: $line-height-body;
+	font-weight: normal;
 
 	@include for-device(phone) {
 		@include font-size(34);
@@ -144,6 +121,86 @@ body {
 	}   	
 }
 
+.bg-number {
+	&::before {
+		@include font-size(700);
+
+		color: #ede8e4;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 500;
+		left: 0;
+		margin: auto;
+		right: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		z-index: -100;
+
+		@include for-device(phone) {
+			@include font-size(300);
+		}
+	}
+
+	&.number {
+		&-one {
+			&::before {
+				content: "01";
+				top: -20%;
+
+				@include for-device(phone) {
+					top: -10%;
+				}
+			}
+		}
+
+		&-two {
+			&::before {
+				content: "02";
+				top: -15%;
+
+				@include for-device(phone) {
+					top: 15%;
+				}
+			}
+		}
+
+		&-three {
+			&::before {
+				content: "03";
+				top: -15%;
+
+				@include for-device(phone) {
+					top: 15%;
+				}
+			}
+		}
+
+		&-four {
+			&::before {
+				content: "04";
+
+				top: -15%;
+
+				@include for-device(phone) {
+					top: 15%;
+				}
+			}
+		}
+
+		&-five {
+			&::before {
+				content: "05";
+
+				top: -15%;
+
+				@include for-device(phone) {
+					top: 15%;
+				}
+			}
+		}
+	}
+}
+
 .header {
 	background: #fff;
 	border-bottom: 1px solid #dcdcdc;
@@ -154,11 +211,11 @@ body {
 	width: 100%;
 
 	&.is-upMove {
-		animation: UpAnime 0.5s forwards;
+		animation: UpAnime .3s forwards;
 	}
 
 	&.is-downMove {
-		animation: DownAnime 0.5s forwards;
+		animation: DownAnime .3s forwards;
 	}
 
 	&_inner {
@@ -168,7 +225,13 @@ body {
 		height: 80px;
 		padding: 0 5%;
 
+		@include for-device(tablet) {
+			padding: 0 40px 0 20px;
+		}
+
 		@include for-device(phone) {
+			@include justify-content(space-between);
+
 			height: 50px;
 		}
 	}
@@ -182,8 +245,13 @@ body {
 			top: 5px;
 			width: auto;
 
+			@include for-device(tablet) {
+				height: 35px;
+			}
+
 			@include for-device(phone) {
 				height: 25px;
+				top: 3px;
 			}
 		}
 	}
@@ -202,14 +270,119 @@ body {
 			li {
 				@include font-size(16);
 
-				font-weight: bold;
+				font-weight: normal;
+
+				@include for-device(tablet) {
+					@include font-size(15);
+				}
 
 				&:nth-child(n+2) {
 					margin-left: 40px;
+
+					@include for-device(tablet) {
+						margin-left: 30px;
+					}
 				}
 
 				a {
 					color: #323232;
+				}
+			}
+		}
+	}
+
+	.spHeaderNav {
+		display: none;
+
+		@include for-device(phone) {
+			display: block;
+			height: 50px;
+			position: relative;
+			width: 50px;
+		}
+
+		span {
+			background-color: #000;
+			display: block;
+			height: 2px;
+			position: absolute;
+			right: 0;
+			width: 26px;
+
+			&:nth-child(1) {
+				top: 18px;
+			}
+
+			&:nth-child(2) {
+				top: 26px
+			}
+
+			&:nth-child(3) {
+				top: 34px;
+			}
+		}
+
+		&.is-active {
+			span {
+				transition: all 0.3s;
+
+				&:nth-child(1) {
+					top: 26px;
+					transform: rotate(140deg);
+				}
+
+				&:nth-child(2) {
+					display: none;
+				}
+
+				&:nth-child(3) {
+					top: 26px;
+					transform: rotate(-315deg);
+				}				
+			}
+		}
+	}
+}
+
+.spHeaderMenu {
+	display: none;
+
+	&.is-open {
+		display: block;
+		left: 0;
+		position: fixed;
+		top: 50px;
+		width: 100%;
+		z-index: 999;
+	}
+
+	&.is-upMove {
+		animation: UpAnime .3s forwards;
+	}
+
+	&.is-downMove {
+		animation: DownAnime .3s forwards;
+	}
+
+	.spHeaderMenuList {
+		background: #fff;
+		border-top: 1px solid #dcdcdc;
+
+		ul {
+			padding: 60px 0;
+			text-align: center;
+
+			li {
+				@include font-size(18);
+
+				font-weight: bold;
+
+				&:nth-child(n+2) {
+					margin-top: 40px;
+				}
+
+				a {
+					color: $color-brown;
 				}
 			}
 		}
